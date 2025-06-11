@@ -1,0 +1,65 @@
+:root{
+    --Blue-950: #02295a ;
+    --Purple-600: #473dff;
+    --Blue-300: #adbeff;
+    --Blue-200: #bfe2fd;
+    --Red-500: #ed3548 ;
+    --Grey-500: #9699ab ;
+    --Purple-200: #d6d9e6 ;
+    --Blue-100: #f0f5ff;
+    --Blue-50: #fafbff;
+    --White: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: var(--Blue-100);
+    .container{
+        padding: 20px;
+        background-color: var(--White);
+        width: 80%;
+        nav {
+            padding: 20px;
+            width: 50%;
+            background: url("../public/bg-sidebar-desktop.svg");
+            background-repeat: no-repeat;
+            div{
+                text-transform: uppercase;
+                div{
+                    span{
+                        color: var(--Grey-500);
+                    }
+                    
+                }
+
+            }
+            div.active{
+                h4{
+                    background-color: var(--Blue-200);
+                }
+            }
+        }
+    }
+}
+button.next-step{
+    color: var(--White);
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--Blue-950);
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+}
+.inactive{
+    cursor: not-allowed !important;
+    opacity: 0.3 !important;
+}
+.card-active{
+    border: 1px solid var(--Blue-950);
+}
