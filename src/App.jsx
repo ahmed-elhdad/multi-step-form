@@ -132,7 +132,7 @@ function App() {
               <h4>yearly</h4>
             </div>
           </div>
-          <Button stepNum={2} />
+          <Button stepNum={2} text="next step" />
         </div>
         {/* End socend step form. */}
         {/* Start third step form. */}
@@ -165,7 +165,7 @@ function App() {
               <span>+$2/mo</span>
             </div>
           </div>
-          <Button stepNum={3} />
+          <Button stepNum={3} text="next step" />
         </div>
         {/* End third step form. */}
         {/* Start fourth step form: */}
@@ -183,13 +183,25 @@ function App() {
               </div>
               <hr />
               <div className='extentions-services'>
-                {}
+                {/* {services} */}
               </div>
               <div></div>
             </div>
           </div>
+          <Button stepNum={4} text="confirm"/>
         </div>
         {/* End fourth step form. */}
+        {/* Start thanks section: */}
+        <div className="thanks">
+          <div>
+            <img src="../public/icon-thank-you.svg" alt="" />
+            <h2>thanks you</h2>
+          </div>
+          <div>
+            <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+          </div>
+        </div>
+        {/* End thanks section */}
       </div>
     </>
   )

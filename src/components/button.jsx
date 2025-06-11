@@ -1,9 +1,9 @@
-const Button = (prop) => {
+const Button = (props) => {
     return (
         <>
-            <div className={`footer-${prop.stepNum}`}>
+            <div className={`footer-${props.stepNum}`}>
                 <span>go back</span>
-                <button className='next-step'>next step</button>
+                <button className='next-step'>{props.text}</button>
             </div>
         </>
     )
