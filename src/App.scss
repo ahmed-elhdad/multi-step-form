@@ -25,13 +25,27 @@ body{
         nav {
             padding: 20px;
             width: 50%;
+            height: auto;
             background: url("../public/bg-sidebar-desktop.svg");
             background-repeat: no-repeat;
+            width: auto;
             div{
                 text-transform: uppercase;
                 div{
-                    span{
-                        color: var(--Grey-500);
+                    width: auto;
+                    text-wrap: nowrap;
+                    h4{
+                        font-weight: 500;
+                        border-radius: 50%;
+                        padding: 3px 12px;
+                        text-align: center;
+                        background-color: transparent;
+                        border: 1px solid var(--Blue-100);
+                    }
+                    span+h3{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: var(--White);
                     }
                     
                 }
@@ -40,26 +54,10 @@ body{
             div.active{
                 h4{
                     background-color: var(--Blue-200);
+                    border: 2px solid var(--Blue-200);
                 }
+
             }
         }
     }
-}
-button.next-step{
-    color: var(--White);
-    font-weight: 500;
-    text-transform: capitalize;
-    background-color: var(--Blue-950);
-    width: auto;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 1;
-}
-.inactive{
-    cursor: not-allowed !important;
-    opacity: 0.3 !important;
-}
-.card-active{
-    border: 1px solid var(--Blue-950);
 }

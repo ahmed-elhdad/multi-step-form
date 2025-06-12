@@ -1,0 +1,32 @@
+button.next-step {
+  color: var(--White);
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: var(--Blue-950);
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 1;
+}
+.inactive {
+  cursor: not-allowed !important;
+  opacity: 0.3 !important;
+}
+.card-active {
+  border: 1px solid var(--Blue-950);
+}
+.d-none {
+  display: none !important;
+}
+
+.f-height{
+    height: 100%;
+    width: 100%;
+}
+span{
+    color: var(--Grey-500);
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0px;
+}

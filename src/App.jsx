@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from 'react'
-import './App.css'
+import './App.css';
+import "./mobile.css"
 import { useEffect } from 'react';
 import Button from './components/button';
 
@@ -53,33 +54,36 @@ function App() {
     <>
       <div className='container flex gap-2 rad-6'>
         {/*Start Nav  */}
-        <nav className='flex flex-col justify-center items-center gap-3'>
-          <div className='flex gap-3 justify-start items-start' id={1}>
-            <h4>1</h4>
-            <div>
-              <span>step 1</span>
-              <h3>your info</h3>
+        <nav className=''>
+          <div className="flex flex-col justify-center items-start">
+            <div className='flex gap-4 justify-start items-center' id={1}>
+              <h4>1</h4>
+              <div>
+                <span>step 1</span>
+                <h3>your info</h3>
+              </div>
             </div>
-          </div>
-          <div className='flex gap-3 justify-start items-start' id={2}>
-            <h4>2</h4>
-            <div>
-              <span>step 2</span>
-              <h3>select plan</h3>
+            <div className='flex gap-4 justify-start items-center' id={2}>
+              <h4>2</h4>
+              <div>
+                <span>step 2</span>
+                <h3>select plan</h3>
+              </div>
             </div>
-          </div>
-          <div className='flex gap-3 justify-start items-start'  id={3}>
-            <h4>3</h4>
-            <div>
-              <span>step 3</span>
-              <h3>add-ons</h3>
+            <div className='flex gap-4 justify-start items-center'  id={3}>
+              <h4>3</h4>
+              <div>
+                <span>step 3</span>
+                <h3>add-ons</h3>
+              </div>
             </div>
-          </div>
-          <div className='flex gap-3 justify-start items-start' id={4}>
-            <h4>4</h4>
-            <div>
-              <span>step 4</span>
-              <h3>summary</h3>
+            <div className='flex gap-4 justify-start items-center' id={4}>
+              <h4>4</h4>
+              <div>
+                <span>step 4</span>
+                <h3>summary</h3>
+              </div>
+            
             </div>
           </div>
         </nav>
@@ -105,7 +109,7 @@ function App() {
         </div>
         {/* End first step form. */}
         {/* Start socend step form. */}
-        <div className="step-2">
+        <div className="step-2 d-none">
           <h1>select your plane</h1>
           <p>You have the option of monthly or yearly billing</p>
           <div className="hero-2">
@@ -136,7 +140,7 @@ function App() {
         </div>
         {/* End socend step form. */}
         {/* Start third step form. */}
-        <div className="step-3">
+        <div className="step-3 d-none">
           <h1>Pick add-ons</h1>
           <p>Add-ons help enhance your gaming experience.</p>
           <div className="hero">
@@ -169,7 +173,7 @@ function App() {
         </div>
         {/* End third step form. */}
         {/* Start fourth step form: */}
-        <div className="step-4">
+        <div className="step-4 d-none">
           <h1>Finishing up</h1>
           <p> Double-check everything looks OK before confirming. </p>
           <div className="hero">
@@ -192,7 +196,7 @@ function App() {
         </div>
         {/* End fourth step form. */}
         {/* Start thanks section: */}
-        <div className="thanks">
+        <div className="thanks d-none">
           <div>
             <img src="../public/icon-thank-you.svg" alt="" />
             <h2>thanks you</h2>
