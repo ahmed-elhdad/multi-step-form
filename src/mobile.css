@@ -29,4 +29,28 @@
   body div#root div.container nav div h4 + div {
     display: none;
   }
+  body div#root div.container .step-1 {
+    width: 80%;
+    position: absolute;
+    border-radius: 14px;
+    z-index: 1;
+    top: 20%;
+    left: 10%;
+    background-color: #fff;
+  }
+  body div#root div.container .step-1 h1 + p {
+    text-wrap: wrap;
+  }
+  body div#root div.container .step-1 .button-div {
+    position: inherit;
+    bottom: 0%;
+    left: -13%;
+    top: 132.5%;
+    background-color: #bfe2fd;
+    width: 126%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 60px;
+  }
 }/*# sourceMappingURL=mobile.css.map */

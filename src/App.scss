@@ -10,18 +10,17 @@
     --Blue-50: #fafbff;
     --White: #ffffff;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 body{
     height: 100vh;
-    background-color: var(--Blue-100);
+    background-color: var(--Blue-9501x);
     .container{
+        gap: 60px;
         padding: 20px;
+        height: 500px;
         background-color: var(--White);
-        width: 80%;
+        border-radius: 7px;
+        width: auto;
         nav {
             padding: 20px;
             width: 50%;
@@ -57,6 +56,58 @@ body{
                     border: 2px solid var(--Blue-200);
                 }
 
+            }
+        }
+        .step-1{
+            padding: 15px;
+            width: auto;
+            h1{
+                font-size: 30px;
+                font-weight: 700;
+                color: var(--Blue-950);
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+            }
+            p{
+                color: var(--Grey-500);
+                text-wrap: nowrap;
+                font-size: 15px;
+                font-weight: 400;
+            }
+            form{
+                gap: 15px;
+                width: 100%;
+                .name-input,
+                .email-input,
+                .phone-input{
+                    .label-error{
+                        width: 80%;
+                        label{
+                            font-size: 14px;
+                            color: var(--Blue-950);
+                            font-weight: 500;
+                        }
+                    }
+                    gap: 3px;
+                    width: 100%;
+                    input{
+                        border: 1px solid var(--Grey-500);
+                        width: 80%;
+                        padding: 0 14px;
+                        height: 35px;
+                        outline: none;
+                        border-radius: 5px;
+                        &:focus{
+                            border: 1px solid var(--Blue-950);
+                        }
+                    }
+                }
+            }
+            .button-div{
+                position: absolute;
+                left: 61%;
+                top: 74%;
             }
         }
     }

@@ -11,20 +11,17 @@
   --White: #ffffff;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   height: 100vh;
-  background-color: var(--Blue-100);
+  background-color: var(--Blue-9501x);
 }
 body .container {
+  gap: 60px;
   padding: 20px;
+  height: 500px;
   background-color: var(--White);
-  width: 80%;
+  border-radius: 7px;
+  width: auto;
 }
 body .container nav {
   padding: 20px;
@@ -57,4 +54,64 @@ body .container nav div div span + h3 {
 body .container nav div.active h4 {
   background-color: var(--Blue-200);
   border: 2px solid var(--Blue-200);
+}
+body .container .step-1 {
+  padding: 15px;
+  width: auto;
+}
+body .container .step-1 h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--Blue-950);
+}
+body .container .step-1 h1::first-letter {
+  text-transform: uppercase;
+}
+body .container .step-1 p {
+  color: var(--Grey-500);
+  text-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 400;
+}
+body .container .step-1 form {
+  gap: 15px;
+  width: 100%;
+}
+body .container .step-1 form .name-input,
+body .container .step-1 form .email-input,
+body .container .step-1 form .phone-input {
+  gap: 3px;
+  width: 100%;
+}
+body .container .step-1 form .name-input .label-error,
+body .container .step-1 form .email-input .label-error,
+body .container .step-1 form .phone-input .label-error {
+  width: 80%;
+}
+body .container .step-1 form .name-input .label-error label,
+body .container .step-1 form .email-input .label-error label,
+body .container .step-1 form .phone-input .label-error label {
+  font-size: 14px;
+  color: var(--Blue-950);
+  font-weight: 500;
+}
+body .container .step-1 form .name-input input,
+body .container .step-1 form .email-input input,
+body .container .step-1 form .phone-input input {
+  border: 1px solid var(--Grey-500);
+  width: 80%;
+  padding: 0 14px;
+  height: 35px;
+  outline: none;
+  border-radius: 5px;
+}
+body .container .step-1 form .name-input input:focus,
+body .container .step-1 form .email-input input:focus,
+body .container .step-1 form .phone-input input:focus {
+  border: 1px solid var(--Blue-950);
+}
+body .container .step-1 .button-div {
+  position: absolute;
+  left: 61%;
+  top: 74%;
 }/*# sourceMappingURL=App.css.map */

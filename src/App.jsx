@@ -9,6 +9,16 @@ import Button from './components/button';
 function App() {
   let [stepNumber, setStepNumber] = useState(1);
   let [plane, setPlane] = useState("arcade");
+  let [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    phone: ""
+  });
+  let [status,setStatus] = useState({
+    name: true,
+    email: true,
+    phone: true
+  });
   const [planePrice, setPlanePrice] = useState(9);
   const [planeTime, setPlaneTime] = useState("monthly");
   const [services, setSecvices] = useState([]);
@@ -92,20 +102,25 @@ function App() {
         <div className="step-1">
           <h1>personal info</h1>
           <p>please provide your name,email address, and phone number.</p>
-          <form action="">
-            <div className="name-input">
-              <label htmlFor="input-name"></label>
+          <form action="" className='flex flex-col justify-center items-center'>
+            <div className="name-input flex flex-col justify-center items-start">
+              <div className="label-error flex justify-between items-center">
+                <label htmlFor="input-name">Name</label>
+                <p className="text-error">{errors.name}</p>
+              </div>
               <input type="text" name="input-name" placeholder=' e.g. Stephen King' />
             </div>
-            <div className="email-input">
-              <label htmlFor="input-email"></label>
+            <div className="email-input flex flex-col justify-center items-start">
+              <label htmlFor="input-email">Email Address</label>
               <input type="text" name='input-email' placeholder='e.g. stephenking@lorem.com' /></div>
-            <div className="phone-input">
+            <div className="phone-input flex flex-col justify-center items-start">
               <label htmlFor="input-phone">Phone Number </label>
               <input type="text" name='input-phone' placeholder='e.g. +1 234 567 890' />
             </div>
           </form>
-          <button className='next-step inactive'>next step</button>
+          <div className='button-div'>
+            <button className='next-step inactive'>next step</button>
+          </div>
         </div>
         {/* End first step form. */}
         {/* Start socend step form. */}

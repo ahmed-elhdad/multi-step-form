@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 button.next-step {
   color: var(--White);
   font-weight: 500;
@@ -20,13 +26,19 @@ button.next-step {
   display: none !important;
 }
 
-.f-height{
-    height: 100%;
-    width: 100%;
+.f-height {
+  height: 100%;
+  width: 100%;
 }
-span{
-    color: var(--Grey-500);
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0px;
+span {
+  color: var(--Grey-500);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+.text-error {
+  color: #ed3548 !important;
+}
+.input-error {
+  border: 1px solid #ed3548 !important;
 }
